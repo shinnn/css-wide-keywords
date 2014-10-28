@@ -6,7 +6,6 @@
 
 var test = require('tape');
 
-var bower = require('./bower.json');
 var spec = 'should be equivalent of the expected value.';
 var expected = ['initial', 'inherit'];
 
@@ -19,6 +18,6 @@ test('window.cssWideKeywords', function(t) {
   t.plan(1);
 
   global.window = {};
-  require(bower.main);
+  require(require('./bower.json').main);
   t.deepEqual(window.cssWideKeywords, expected, spec);
 });

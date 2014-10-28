@@ -4,7 +4,7 @@
 [![Bower version](https://badge.fury.io/bo/css-wide-keywords.svg)](https://github.com/shinnn/css-wide-keywords/releases)
 [![Build Status](https://travis-ci.org/shinnn/css-wide-keywords.svg?branch=master)](https://travis-ci.org/shinnn/css-wide-keywords)
 
-An array of [CSS-wide keywords](http://www.w3.org/TR/css3-values/#common-keywords)
+An array of the [CSS-wide keywords](http://www.w3.org/TR/css3-values/#common-keywords)
 
 ```javascript
 cssWideKeywords; //=> ['initial', 'inherit']
