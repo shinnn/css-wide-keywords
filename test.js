@@ -1,23 +1,19 @@
-/*!
- * css-wide-keywords | MIT (c) Shinnosuke Watanabe
- * https://github.com/shinnn/css-wide-keywords
-*/
 'use strict';
 
-var test = require('tape');
+const test = require('tape');
 
-var spec = 'should be equivalent of the expected value.';
-var expected = ['initial', 'inherit'];
+const spec = 'should be equivalent of the expected value.';
+const expected = ['initial', 'inherit'];
 
-test('require(\'css-wide-keywords\')', function(t) {
+test('require(\'css-wide-keywords\')', t => {
   t.plan(1);
   t.deepEqual(require('./'), expected, spec);
 });
 
-test('window.cssWideKeywords', function(t) {
+test('window.cssWideKeywords', t => {
   t.plan(1);
 
   global.window = {};
-  require(require('./bower.json').main);
+  require('./' + require('./bower.json').main);
   t.deepEqual(window.cssWideKeywords, expected, spec);
 });
