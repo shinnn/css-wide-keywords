@@ -2,10 +2,9 @@
   "name": "css-wide-keywords",
   "version": "1.0.0",
   "description": "Array of CSS-wide keywords",
-  "main": "./css-wide-keywords-cjs.js",
+  "main": "css-wide-keywords.json",
   "files": [
-    "css-wide-keywords-cjs.js",
-    "LICENSE"
+    "css-wide-keywords.json"
   ],
   "scripts": {
     "pretest": "eslint *.js & jscs *.js",
