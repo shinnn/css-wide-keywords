@@ -10,9 +10,10 @@
     "array",
     "initial",
     "inherit",
+    "unset",
     "keyword"
   ],
-  "main": "css-wide-keywords.js",
+  "main": "browser.js",
   "moduleType": "globals",
   "homepage": "https://github.com/shinnn/css-wide-keywords",
   "repository": {

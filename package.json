@@ -5,13 +5,12 @@
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "repository": "shinnn/css-wide-keywords",
   "license": "Unlicense",
-  "main": "css-wide-keywords.json",
   "files": [
-    "css-wide-keywords.json"
+    "index.json"
   ],
   "scripts": {
-    "pretest": "eslint --config node_modules/@shinnn/eslintrc/rc.json --ignore-path .gitignore .",
-    "test": "node --harmony_arrow_functions test.js"
+    "pretest": "eslint --config @shinnn/node --global window .",
+    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js"
   },
   "keywords": [
     "css",
@@ -21,13 +20,14 @@
     "array",
     "initial",
     "inherit",
+    "unset",
     "keyword",
     "browser",
     "client-side"
   ],
   "devDependencies": {
-    "@shinnn/eslintrc": "^1.0.0",
-    "eslint": "^0.22.1",
-    "tape": "^4.0.0"
+    "@shinnn/eslint-config-node": "^1.0.1",
+    "eslint": "^1.7.2",
+    "tape": "^4.2.1"
   }
 }

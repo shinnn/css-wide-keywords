@@ -1,1 +1,0 @@
-window.cssWideKeywords = ['initial', 'inherit'];
