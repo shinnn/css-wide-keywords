@@ -5,7 +5,9 @@
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "repository": "shinnn/css-wide-keywords",
   "license": "Unlicense",
+  "jsnext:main": "index.jsnext.js",
   "files": [
+    "index.jsnext.js",
     "index.json"
   ],
   "scripts": {
@@ -28,6 +30,8 @@
   "devDependencies": {
     "@shinnn/eslint-config-node": "^2.0.0",
     "eslint": "^2.2.0",
+    "require-from-string": "^1.1.0",
+    "rollup": "^0.25.4",
     "tape": "^4.4.0"
   }
 }
