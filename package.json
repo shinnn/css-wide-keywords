@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "pretest": "eslint --fix --config @shinnn/node --global window .",
-    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js"
+    "test": "node --throw-deprecation --track-heap-objects test.js"
   },
   "keywords": [
     "css",

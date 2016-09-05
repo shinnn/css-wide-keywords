@@ -1,7 +1,7 @@
-'use strong';
+'use strict';
 
 const requireFromString = require('require-from-string');
-const rollup = require('rollup');
+const {rollup} = require('rollup');
 const test = require('tape');
 
 const spec = 'should be equivalent of the expected value.';
@@ -23,7 +23,7 @@ test('window.cssWideKeywords', t => {
 test('Module exports', t => {
   t.plan(1);
 
-  rollup.rollup({entry: require('./package.json')['jsnext:main']}).then(bundle => {
+  rollup({entry: require('./package.json')['jsnext:main']}).then(bundle => {
     t.deepEqual(requireFromString(bundle.generate({format: 'cjs'}).code), expected, spec);
-  });
+  }).catch(t.fail);
 });
